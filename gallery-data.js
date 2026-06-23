@@ -26,6 +26,10 @@ window.galleryData = {
     {
       "src": "images/ceremony/ceremony3.webp",
       "alt": "Wedding ceremony ceremony 3"
+    },
+    {
+      "src": "images/ceremony/ceremony4.webp",
+      "alt": "Wedding ceremony ceremony 4"
     }
   ],
   "family": [
