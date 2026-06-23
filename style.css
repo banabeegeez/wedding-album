@@ -1024,6 +1024,36 @@ img {
     0 0 0 12px rgba(255, 255, 255, 0.04);
 }
 
+.wedding-video-embed {
+  width: min(1080px, 100%);
+
+  display: block;
+
+  aspect-ratio: 16 / 9;
+
+  margin: 48px auto 0;
+
+  background: #050811;
+
+  border: 1px solid rgba(200, 169, 107, 0.38);
+
+  box-shadow:
+    0 24px 55px rgba(15, 30, 58, 0.14),
+    0 0 0 10px rgba(200, 169, 107, 0.06);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.wedding-video-embed:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 28px 65px rgba(15, 30, 58, 0.18),
+    0 0 0 12px rgba(200, 169, 107, 0.08);
+}
+
 .reception-layout {
   width: min(1120px, 100%);
 
@@ -1723,10 +1753,6 @@ img {
 
     aspect-ratio: 4 / 5;
     max-height: 300px;
-  }
-
-  .film-section video {
-    aspect-ratio: 4 / 5;
   }
 
   .thank-you-section {

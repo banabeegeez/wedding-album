@@ -227,6 +227,7 @@ const revealElements = document.querySelectorAll(`
     .gallery-grid,
     .film-section iframe,
     .film-section video,
+    .wedding-video-embed,
     .reception-layout,
     .thank-you-section > *,
     .share-section button,
@@ -256,7 +257,7 @@ const revealObserver = new IntersectionObserver(
     });
   },
   {
-    threshold: 0.16,
+    threshold: 0.02,
   },
 );
 
@@ -457,7 +458,7 @@ setInterval(() => {
     .then((response) => response.text())
     .then((text) => {
       // Parse the new data
-      const newData = {};
+      let newData = {};
       const match = text.match(/window\.galleryData\s*=\s*({[\s\S]*?});/);
       if (match) {
         try {
@@ -487,12 +488,20 @@ tag.src = "https://www.youtube.com/iframe_api";
 const firstScriptTag = document.getElementsByTagName("script")[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-let ytPlayer;
+let ytPlayers = [];
 window.onYouTubeIframeAPIReady = function () {
-  ytPlayer = new YT.Player("youtubePlayer", {
-    events: {
-      onStateChange: onPlayerStateChange,
-    },
+  const ids = ["youtubePlayer", "holyMatrimonyPlayer", "weddingReceptionPlayer"];
+  ids.forEach((id) => {
+    const el = document.getElementById(id);
+    if (el) {
+      ytPlayers.push(
+        new YT.Player(id, {
+          events: {
+            onStateChange: onPlayerStateChange,
+          },
+        })
+      );
+    }
   });
 };
 
