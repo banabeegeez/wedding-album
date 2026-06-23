@@ -225,6 +225,7 @@ const revealElements = document.querySelectorAll(`
     .section-heading,
     .wedding-day-layout,
     .gallery-grid,
+    .film-section iframe,
     .film-section video,
     .reception-layout,
     .thank-you-section > *,
@@ -475,3 +476,35 @@ setInterval(() => {
     })
     .catch(() => {});
 }, 2000); // Check every 2 seconds
+
+/* ==========================
+   YOUTUBE PLAYER API
+========================== */
+
+// Load the YouTube IFrame Player API code asynchronously.
+const tag = document.createElement("script");
+tag.src = "https://www.youtube.com/iframe_api";
+const firstScriptTag = document.getElementsByTagName("script")[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+let ytPlayer;
+window.onYouTubeIframeAPIReady = function () {
+  ytPlayer = new YT.Player("youtubePlayer", {
+    events: {
+      onStateChange: onPlayerStateChange,
+    },
+  });
+};
+
+function onPlayerStateChange(event) {
+  // 1 represents YT.PlayerState.PLAYING
+  if (event.data === 1) {
+    if (bgMusic && !bgMusic.paused) {
+      bgMusic.pause();
+      if (musicToggle) {
+        musicToggle.classList.add("is-muted");
+      }
+    }
+  }
+}
+

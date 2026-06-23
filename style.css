@@ -1005,7 +1005,8 @@ img {
   color: #0b2248;
 }
 
-.film-section video {
+.film-section video,
+.film-section iframe {
   width: min(1080px, 100%);
 
   display: block;
@@ -1015,8 +1016,6 @@ img {
   margin: 0 auto;
 
   background: #050811;
-
-  object-fit: cover;
 
   border: 1px solid rgba(200, 169, 107, 0.38);
 
