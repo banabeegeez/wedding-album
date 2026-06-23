@@ -64,6 +64,18 @@ window.galleryData = {
     {
       "src": "images/family/family8.webp",
       "alt": "Family portrait family 8"
+    },
+    {
+      "src": "images/family/family9.webp",
+      "alt": "Family portrait family 9"
+    },
+    {
+      "src": "images/family/family10.webp",
+      "alt": "Family portrait family 10"
+    },
+    {
+      "src": "images/family/family11.webp",
+      "alt": "Family portrait family 11"
     }
   ],
   "reception": [
