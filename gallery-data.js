@@ -86,6 +86,10 @@ window.galleryData = {
     {
       "src": "images/reception/reception2.webp",
       "alt": "Wedding reception reception 2"
+    },
+    {
+      "src": "images/reception/reception3.webp",
+      "alt": "Wedding reception reception 3"
     }
   ],
   "silentHeroes": [
