@@ -74,28 +74,28 @@ window.galleryData = {
   ],
   "silentHeroes": [
     {
-      "src": "images/heroes/MCN_4892.JPG",
-      "alt": "Silent hero MCN 4892"
+      "src": "images/heroes/hero1.webp",
+      "alt": "Silent hero hero 1"
     },
     {
-      "src": "images/heroes/MCN_4893.JPG",
-      "alt": "Silent hero MCN 4893"
+      "src": "images/heroes/hero2.webp",
+      "alt": "Silent hero hero 2"
     },
     {
-      "src": "images/heroes/MCN_4894.JPG",
-      "alt": "Silent hero MCN 4894"
+      "src": "images/heroes/hero3.webp",
+      "alt": "Silent hero hero 3"
     },
     {
-      "src": "images/heroes/MCN_4895.JPG",
-      "alt": "Silent hero MCN 4895"
+      "src": "images/heroes/hero4.webp",
+      "alt": "Silent hero hero 4"
     },
     {
-      "src": "images/heroes/MCN_4896.JPG",
-      "alt": "Silent hero MCN 4896"
+      "src": "images/heroes/hero5.webp",
+      "alt": "Silent hero hero 5"
     },
     {
-      "src": "images/heroes/MCN_4907.JPG",
-      "alt": "Silent hero MCN 4907"
+      "src": "images/heroes/hero6.webp",
+      "alt": "Silent hero hero 6"
     }
   ]
 };
