@@ -1,0 +1,16 @@
+{
+  "name": "bana-bella-wedding-album",
+  "version": "1.0.0",
+  "description": "Wedding album website for Bana & Bella",
+  "scripts": {
+    "watch": "node generate-gallery-data.js",
+    "generate": "node generate-gallery-data.js"
+  },
+  "keywords": [
+    "wedding",
+    "album",
+    "gallery"
+  ],
+  "author": "Media Kita",
+  "license": "ISC"
+}
